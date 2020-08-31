@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+header {
+  height: 80px;
+  padding: 10px;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar li {
+  margin: 0 20px;
+  list-style-type: none;
+}
+
+header .navbar li a {
+  color: #423f47;
+  text-decoration: none;
+}
+
+header .navbar li:last-child {
+  background-color: #36BFCE;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+header .navbar li:last-child a {
+  color: #fff;
+}
+
+main {
+  background: url(../img/full.jpg) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .find {
+  margin-top: 90px;
+  color: #fff;
+}
+
+main .find h2 {
+  font-size: 30px;
+}
+
+main .find .find__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .find .find__input {
+  background-color: #fff;
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px 0 0 5px;
+}
+
+main .find .find__input .find__search--search {
+  margin-right: 20px;
+}
+
+main .find .find__input i {
+  color: #b5b0be;
+  margin-right: 10px;
+}
+
+main .find .find__input input {
+  border: none;
+  outline: none;
+  width: 300px;
+  font-size: 14px;
+}
+
+main .find .find__search .btn {
+  border: none;
+  outline: none;
+  background-color: #F89259;
+  color: #fff;
+  padding: 0 30px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+main .place {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  padding: 25px 40px;
+  border-radius: 10px;
+}
+
+main .place p {
+  font-size: 14px;
+  color: #423f47;
+  margin: 5px 0;
+}
+
+main .place .place__info {
+  background-color: #b5b0be55;
+  color: #423f47;
+  width: 55%;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+main .place .place__info i {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=style.css.map */

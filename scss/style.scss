@@ -1,0 +1,118 @@
+$primary-color: #fff;
+$button-color: #36BFCE;
+$search-color: #F89259;
+$text-color: #b5b0be;
+$font-size: 14px;
+$border-radius: 5px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+header{
+  height: 80px;
+  padding: 10px;
+  .navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    li{
+      margin: 0 20px;
+      list-style-type: none;
+    }
+    li a{
+      color: #423f47;
+      text-decoration: none;
+    }
+    li:last-child{
+      background-color: $button-color;
+      padding: 20px 30px;
+      border-radius: $border-radius;
+    }
+    li:last-child a{
+      color: $primary-color;
+    }
+  }
+}
+
+main{
+  background: url(../img/full.jpg) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  .find{
+    margin-top: 90px;
+    color: $primary-color;
+    h2{
+      font-size: $font-size + 16px;
+    }
+    .find__search{
+      display: flex;
+    }
+    .find__input{
+      background-color: $primary-color;
+      padding: 15px 25px;
+      display: flex;
+      border-radius: $border-radius 0 0 $border-radius;
+    }
+    .find__input .find__search--search{
+      margin-right: 20px;
+    }
+    .find__input i{
+      color: $text-color;
+      margin-right: 10px;
+    }
+    .find__input input{
+      border: none;
+      outline: none;
+      // border: 2px solid #000;
+      width: 300px;
+      font-size: $font-size;
+    }
+    .find__search .btn{
+      border: none;
+      outline: none;
+      background-color: $search-color;
+      color: $primary-color;
+      padding: 0 30px;
+      border-radius: 0 $border-radius $border-radius 0;
+      cursor: pointer;
+    }
+  }
+  .place{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 25px 40px;
+    border-radius: $border-radius + 5px;
+    p{
+      font-size: $font-size;
+      color: #423f47;
+      margin: 5px 0;
+    }
+    .place__info{
+      background-color: #b5b0be55;
+      color: #423f47;
+      width: 55%;
+      padding: 5px 15px;
+      font-size: $font-size - 2px;
+      font-weight: bold;
+      border-radius: $border-radius + 15px;
+    }
+    .place__info i{
+      margin-right: 5px;
+    }
+  }
+}
